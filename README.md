@@ -7,7 +7,7 @@
   <p align="center">
     A prototype application that allows farmers to track their crop yields and use current global economical factors to estimate profits. 
     <br />
-    Created as a group project for <a href="https://developers.google.com/community/gdsc" target="_blank">GDSC</a>.
+    Created as a group project for <a href="https://developers.google.com/community/gdsc-solution-challenge" target="_blank">2023 GDSC Solution Challenge</a>.
     <br />
     <br />
     <strong> Creators </strong>
