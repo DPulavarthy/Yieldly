@@ -26,3 +26,9 @@
     <a href="https://github.com/DPulavarthy/Yieldly/issues"> Request Feature </a>
   </p>
 </p>
+
+### Startup
+In reference to development please use the following to start the application. Please use two seperate terminals to run this.
+Terminal 1: `npm run server`
+Terminal 2: `npm run android`
+Note: Please do not run scripts other than these two to maintain stability.
