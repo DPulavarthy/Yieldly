@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yieldly</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../../assets/icon.png" type="image/png">
+</head>
+
+<body>
+    <div id="icon"></div>
+    <main>
+        <h2>Welcome to</h2>
+        <br />
+        <h1>Yieldly</h1>
+
+        <div class="button" id="signin">Sign In</div>
+        <div class="spacer">
+            <hr />
+            <span>or</span>
+            <hr />
+        </div>
+        <div class="button" id="signup">Sign Up</div>
+    </main>
+
+    <script>
+        setTimeout(_ => {
+            if (!document.body.classList.contains('active')) document.body.classList.add('active')
+        }, 4000)
+
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('click', _ => {
+                document.body.classList.add('switch')
+                setTimeout(_ => {
+                    window.location.href = `${button.id}.html`
+                }, 200)
+            })
+        })
+
+        if (window.location.hash == '#skip') {
+            document.body.classList.add('active')
+            document.querySelector('#icon').style.background = 'url(../assets/icon.png) no-repeat';
+            document.querySelector('#icon').style.backgroundSize = 'contain';
+            document.querySelector('#icon').style.backgroundPosition = 'bottom';
+        }
+    </script>
+</body>
+
+</html>

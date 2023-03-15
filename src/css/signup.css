@@ -1,0 +1,64 @@
+#back {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    font-size: 30px;
+    padding: 10px;
+    color: var(--main);
+    z-index: 10;
+}
+
+div#icon {
+    background: url(../assets/icon.png) no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 60vh;
+    transition-duration: 300ms;
+}
+
+main {
+    height: 40vh;
+    background: var(--main);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    transition-duration: 300ms;
+}
+
+body.active div#icon {
+    height: 90vh;
+}
+
+body.active main {
+    height: 10vh;
+}
+
+body.active .button {
+    opacity: 1;
+}
+
+.button {
+    background: var(--background);
+    color: var(--main);
+    border: none;
+    border-radius: 50px 5px 5px 50px;
+    padding: 10px 15px;
+    font-size: 20px;
+    margin: 15px;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0;
+    transition-delay: 300ms;
+    transition-duration: 200ms;
+}
+
+#google::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0 0 -23px -5px;
+    background: url(../assets/google.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: scale(1.4);
+}
