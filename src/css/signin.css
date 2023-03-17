@@ -1,10 +1,8 @@
 #back {
     position: fixed;
-    top: 25px;
-    left: 0;
-    font-size: 30px;
+    top: 5%;
+    left: 1%;
     padding: 10px;
-    color: var(--main);
     z-index: 10;
 }
 
@@ -44,7 +42,7 @@ body.active .spacer {
     background: var(--background);
     color: var(--main);
     border: none;
-    border-radius: 50px 5px 5px 50px;
+    border-radius: 50px;
     padding: 10px 15px;
     font-size: 20px;
     margin: 15px;
@@ -81,7 +79,7 @@ body.active .spacer {
     display: block;
     width: 25px;
     height: 25px;
-    margin: 0 0 -23px -5px;
+    margin: 0 0 -23px 0px;
     background: url(../assets/google.png) no-repeat;
     background-size: contain;
     background-position: center;
@@ -92,9 +90,9 @@ body.active .spacer {
 #guest::before {
     content: '';
     display: block;
-    width: 25px;
-    height: 25px;
-    margin: 0 0 -23px -5px;
+    width: 20px;
+    height: 20px;
+    margin: 0 0 -23px 0px;
     background: url(../assets/guest.png) no-repeat;
     background-size: contain;
     background-position: center;

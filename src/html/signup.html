@@ -12,7 +12,9 @@
 </head>
 
 <body>
-    <div id="back">&#x2190;</div>
+    <div id="back">
+        <img src="../assets/backArrow.png" />
+    </div>
     <div id="icon"></div>
     <main>
         <div class="button" id="google">Continue with Google</div>
@@ -27,6 +29,12 @@
             window.location.href = 'login.html#skip'
         })
     </script>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/7.14.4/firebase-app.js"></script>
+    <script src="/__/firebase/7.14.4/firebase-auth.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    
+    <script src="../js/googleAuth.js"></script>
 </body>
 
 </html>
