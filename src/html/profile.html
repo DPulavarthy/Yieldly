@@ -17,16 +17,14 @@
     </body>
 
     <script>
-        import { getAuth, signOut } from "firebase/auth";
-        
-        document.getElementById('logout').addEventListener('click', _ => {
-            const auth = getAuth();
-            signOut(auth).then(() => {
-            // Sign-out successful.
-            }).catch((error) => {
-            // An error happened.
-            });
-        })
+        document.getElementById('logout').addEventListener('click', function() {
+            // firebase.auth().signOut().then(function() {
+            //     window.location.href = 'login.html#skip'
+            // }).catch(function(error) {
+            //     console.log(error);
+            // });
+            window.location.href = 'login.html#skip'
+        });
     </script>
 
 </html>
