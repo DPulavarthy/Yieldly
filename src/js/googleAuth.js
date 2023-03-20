@@ -36,6 +36,16 @@ document.getElementById('google').addEventListener('click', _ => {
     });
 });
 
+document.getElementById('guest').addEventListener('click', _ => {
+    firebase.auth().signInAnonymously()
+    .then(() => {
+        window.location.href = 'profile.html';
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+});
+
 // document.getElementById('google').addEventListener('click', _ => {
 //     function googleSignIn() {
 //         const provider = new firebase.auth.GoogleAuthProvider();
