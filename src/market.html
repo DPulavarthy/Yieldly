@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yieldly</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/market.css">
+        <link rel="icon" href="assets/icon.png" type="image/png">
+    </head>
+    <body>
+        <h2>Market HTML</h2>
+        <div id="navbar">
+            <img id="dataBtn" src="assets/navbar/data.png" />
+            <img id="calcBtn" src="assets/navbar/calculator.png" />
+            <img id="marketBtn" src="assets/navbar/market.png" />
+            <img id="profileBtn" src="assets/navbar/profile.png" />
+        </div>
+    </body>
+    
+    <script>
+        document.getElementById('dataBtn').addEventListener('click', _ => {
+            window.location.href = 'data.html'
+        });
+        document.getElementById('calcBtn').addEventListener('click', _ => {
+            window.location.href = 'calc.html'
+        });
+        document.getElementById('profileBtn').addEventListener('click', _ => {
+            window.location.href = 'profile.html'
+        });
+    </script>
+
+</html>
