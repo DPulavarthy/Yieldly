@@ -21,29 +21,39 @@
             <div id="editBtn">
                 <img src="assets/profilePage/editProfile.png" />
             </div>
-
             <div class="info" id="firstname">First Name</div>
             <div class="info" id="lastname">Last Name</div>
             <div class="info" id="email">Email</div>
             <div class="info" id="location">Location</div>
         </main>
 
-        <div id="navvar">
+        <div id="navbar">
             <img id="dataBtn" src="assets/navbar/data.png" />
-            <img id="calcBtn" src="assets/navbar/data.png" />
-            <img id="marketBtn" src="assets/navbar/data.png" />
-            <img id="profileBtn" src="assets/navbar/data.png" />
+            <img id="calcBtn" src="assets/navbar/calculator.png" />
+            <img id="marketBtn" src="assets/navbar/market.png" />
+            <img id="profileBtn" src="assets/navbar/profile.png" />
         </div>
     </body>
 
     <script>
         document.getElementById('logout').addEventListener('click', function() {
-            // firebase.auth().signOut().then(function() {
-            //     window.location.href = 'login.html#skip'
-            // }).catch(function(error) {
-            //     console.log(error);
-            // });
+            firebase.auth().signOut().then(function() {
+                window.location.href = 'login.html#skip'
+            }).catch(function(error) {
+                console.log(error);
+            });
             window.location.href = 'index.html#skip'
+        });
+
+
+        document.getElementById('dataBtn').addEventListener('click', _ => {
+            window.location.href = 'data.html'
+        });
+        document.getElementById('calcBtn').addEventListener('click', _ => {
+            window.location.href = 'calc.html'
+        });
+        document.getElementById('marketBtn').addEventListener('click', _ => {
+            window.location.href = 'market.html'
         });
     </script>
 
