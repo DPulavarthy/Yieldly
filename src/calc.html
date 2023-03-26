@@ -1,34 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Yieldly</title>
-        <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/calc.css">
-        <link rel="icon" href="assets/icon.png" type="image/png">
-    </head>
-    <body>
-        <h2>Calculator HTML</h2>
-        <div id="navbar">
-            <img id="dataBtn" src="assets/navbar/data.png" />
-            <img id="calcBtn" src="assets/navbar/calculator.png" />
-            <img id="marketBtn" src="assets/navbar/market.png" />
-            <img id="profileBtn" src="assets/navbar/profile.png" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yieldly</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/calc.css">
+    <link rel="icon" href="assets/icon.png" type="image/png">
+</head>
+
+<body>
+    <h1 id="screenTitle">Yield Calculator</h1>
+
+    <main>
+        <div id="cropType">
+            <!-- <h2>Crop Type :</h2> -->
+
+            <div class="select-box">
+
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id=apples " name=" category">
+                        <label for="apples
+                        "> Apples
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=avocados " name=" category">
+                        <label for="avocados
+                        "> Avocados
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=bananas " name=" category">
+                        <label for="bananas
+                        "> Bananas
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=blueberries " name=" category">
+                        <label for="blueberries
+                        "> Blueberries
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=grapes " name=" category">
+                        <label for="grapes
+                        "> Grapes
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=lemon " name=" category">
+                        <label for="lemon
+                        "> Lemon
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=mangoes " name=" category">
+                        <label for="mangoes
+                        "> Mangoes
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=oranges " name=" category">
+                        <label for="oranges
+                        "> Oranges
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=peaches " name=" category">
+                        <label for="peaches
+                        "> Peaches
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=pineapples " name=" category">
+                        <label for="pineapples
+                        "> Pineapples
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=stawberries " name=" category">
+                        <label for="stawberries
+                        "> Stawberries
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=watermelons " name=" category">
+                        <label for="watermelons
+                        "> Watermelons
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=beans " name=" category">
+                        <label for="beans
+                        "> Beans
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=broccoli " name=" category">
+                        <label for="broccoli
+                        "> Broccoli
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=cabbage " name=" category">
+                        <label for="cabbage
+                        "> Cabbage
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=carrots " name=" category">
+                        <label for="carrots
+                        "> Carrots
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=cauliflower " name=" category">
+                        <label for="cauliflower
+                        "> Cauliflower
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=corn " name=" category">
+                        <label for="corn
+                        "> Corn
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=eggplant " name=" category">
+                        <label for="eggplant
+                        "> Eggplant
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=lettuce " name=" category">
+                        <label for="lettuce
+                        "> Lettuce
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=onions " name=" category">
+                        <label for="onions
+                        "> Onions
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=potatoes " name=" category">
+                        <label for="potatoes
+                        "> Potatoes
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=pumpkins " name=" category">
+                        <label for="pumpkins
+                        "> Pumpkins
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=spinach " name=" category">
+                        <label for="spinach
+                        "> Spinach
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=tomatoes " name=" category">
+                        <label for="tomatoes
+                        "> Tomatoes
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=basil " name=" category">
+                        <label for="basil
+                        "> Basil
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=chives " name=" category">
+                        <label for="chives
+                        "> Chives
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=cilantro " name=" category">
+                        <label for="cilantro
+                        "> Cilantro
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=curry leaves " name=" category">
+                        <label for="curry leaves
+                        "> Curry leaves
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=mint " name=" category">
+                        <label for="mint
+                        "> Mint
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=rosemary " name=" category">
+                        <label for="rosemary
+                        "> Rosemary
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=almonds " name=" category">
+                        <label for="almonds
+                        "> Almonds
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=cashews " name=" category">
+                        <label for="cashews
+                        "> Cashews
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=peanuts " name=" category">
+                        <label for="peanuts
+                        "> Peanuts
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id=walnuts" name="category">
+                        <label for="walnuts"> Walnuts </label>
+                    </div>
+                </div>
+                <div class="selected">
+                    Select a Crop Type:
+                </div>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Search Crop . . ." />
+                </div>
+            </div>
         </div>
-    </body>
-    
-    <script>
-        document.getElementById('dataBtn').addEventListener('click', _ => {
-            window.location.href = 'data.html'
-        });
-        document.getElementById('marketBtn').addEventListener('click', _ => {
-            window.location.href = 'market.html'
-        });
-        document.getElementById('profileBtn').addEventListener('click', _ => {
-            window.location.href = 'profile.html'
-        });
-    </script>
+        <div id="startDate">
+            <h2>Start Date</h2>
+            <input type="date" value="">
+        </div>
+        <div id="harvestDate">
+            <h2>Harvest Date</h2>
+            <input type="date" value="">
+        </div>
+    </main>
+
+    <div id="navbar">
+        <img id="dataBtn" src="assets/navbar/data.png" />
+        <img id="calcBtn" src="assets/navbar/calculator.png" />
+        <img id="marketBtn" src="assets/navbar/market.png" />
+        <img id="profileBtn" src="assets/navbar/profile.png" />
+    </div>
+</body>
+
+<script src="js/calcStart.js"></script>
 
 </html>
