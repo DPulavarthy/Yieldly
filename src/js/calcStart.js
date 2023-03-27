@@ -17,11 +17,11 @@ document.getElementById('profileBtn').addEventListener('click', _ => {
 const selected = document.querySelector(".selected");
 const optionsContainer = document.querySelector(".options-container");
 const searchBox = document.querySelector(".search-box input");
-
 const optionsList = document.querySelectorAll(".option");
 
 selected.addEventListener("click", () => {
     optionsContainer.classList.toggle("active");
+    
     document.getElementById("startDate").style.display = "none";
     document.getElementById("harvestDate").style.display = "none";
     
@@ -40,6 +40,7 @@ optionsList.forEach(o => {
     o.addEventListener("click", () => {
         selected.innerHTML = o.querySelector("label").innerHTML;
         optionsContainer.classList.remove("active");
+
         document.getElementById("startDate").style.display = "block";
         document.getElementById("harvestDate").style.display = "block";
     });
@@ -64,3 +65,18 @@ const filterList = searchTerm => {
 };
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    //                                          Restart Button
+
+document.getElementById('restartBtn').addEventListener('click', _ => {
+    // selected.innerHTML = "Select crop";
+    // searchBox.value = "";
+    // optionsList.forEach(option => {
+    //     option.style.display = "none";
+    // });
+
+    // document.getElementById("startDateInput").value = "";
+    // document.getElementById("harvestDateInput").value = "";
+    window.location.reload();
+});
