@@ -64,8 +64,12 @@ main {
     margin-left: 12%;
     padding-top: 8px;
 }
-#firstname {
+#firstnametxtbx {
     margin-top: 30%;
+}
+
+::placeholder {
+    color: var(--main);
 }
 
 #navbar {
