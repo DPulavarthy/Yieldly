@@ -10,7 +10,8 @@
         <link rel="icon" href="assets/icon.png" type="image/png">
     </head>
     <body>
-        <h2>DATA HTML</h2>
+        <h2 id="locationHeading">Location Data</h2>
+
         <div id="navbar">
             <img id="dataBtn" src="assets/navbar/data.png" />
             <img id="calcBtn" src="assets/navbar/calculator.png" />
@@ -19,16 +20,6 @@
         </div>
     </body>
     
-    <script>
-        document.getElementById('calcBtn').addEventListener('click', _ => {
-            window.location.href = 'calc.html'
-        });
-        document.getElementById('marketBtn').addEventListener('click', _ => {
-            window.location.href = 'market.html'
-        });
-        document.getElementById('profileBtn').addEventListener('click', _ => {
-            window.location.href = 'profile.html'
-        });
-    </script>
+    <script src="js/data.js"></script>
 
 </html>
