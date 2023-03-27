@@ -24,7 +24,7 @@ selected.addEventListener("click", () => {
     optionsContainer.classList.toggle("active");
     document.getElementById("startDate").style.display = "none";
     document.getElementById("harvestDate").style.display = "none";
-
+    
     searchBox.value = "";
     filterList("");
     if(optionsContainer.classList.contains("active")) {
