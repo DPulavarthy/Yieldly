@@ -7,6 +7,3 @@ document.getElementById('marketBtn').addEventListener('click', _ => {
 document.getElementById('profileBtn').addEventListener('click', _ => {
     window.location.href = 'profile.html'
 });
-
-// const userLocation = localStorage.getItem('userLocation');
-// document.getElementById('locationHeading').textContent = userLocation + ' Data';
