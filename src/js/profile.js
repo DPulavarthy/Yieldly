@@ -41,7 +41,13 @@ fetch('http://ip-api.com/json')
     .then(data => {
         const city = data.city;
         const state = data.regionName;
+        const longitude = data.lon;
+        const latitude = data.lat;
         document.getElementById('location').textContent = city + ", " + state;
+        window.localStorage.setItem('userCity', city);
+        window.localStorage.setItem('userState', state);
+        window.localStorage.setItem('userLongitude', longitude);
+        window.localStorage.setItem('userLatitude', latitude);
     })
     .catch(error => {
         console.error(error);

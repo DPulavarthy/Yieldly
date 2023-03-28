@@ -37,6 +37,7 @@ main #cropType {
     line-height: 28px;
     color: #292B36;
 } */
+
 main #cropType .select-box {
     position: relative;
     display: flex;
@@ -137,7 +138,6 @@ main #cropType .select-box .options-container.active~.search-box input {
     pointer-events: auto;
 }
 
-
 main #startDate h2,
 #harvestDate h2 {
     font-style: normal;
@@ -179,8 +179,15 @@ main #calculatePrice button {
     transform: translate(-50%, -25%);
 
     margin-top: 25%;
-    height: 90px;
-    width: 175px;
+    height: 60px;
+    width: 300px;
+
+    border-radius: 22px;
+    color: var(--background);
+    border-color: #FFC462;
+
+    display: "none";
+    
 }
 
 main #restartBtn button {
@@ -190,9 +197,11 @@ main #restartBtn button {
 
 main #restartBtn button,
 #historyBtn button {
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
     width: 125px;
     height: 50px;
+    border-radius: 10px;
 }
 
 /* button text and bg style */
@@ -200,12 +209,9 @@ main #calculatePrice button,
 #historyBtn button,
 #restartBtn button {
     position: relative;
-
     background: var(--main);
     border-color: var(--background);
-    border-radius: 10px 10px 10px 10px;
     box-shadow: inset 0px 4px 4px var(--main);
-
     text-align: center;
     font-style: normal;
     font-weight: 700;

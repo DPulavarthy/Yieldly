@@ -18,12 +18,15 @@ const selected = document.querySelector(".selected");
 const optionsContainer = document.querySelector(".options-container");
 const searchBox = document.querySelector(".search-box input");
 const optionsList = document.querySelectorAll(".option");
+const startDateBox = document.getElementById("startDate");
+const harvestDateBox = document.getElementById("harvestDate");
+
 
 selected.addEventListener("click", () => {
     optionsContainer.classList.toggle("active");
     
-    document.getElementById("startDate").style.display = "none";
-    document.getElementById("harvestDate").style.display = "none";
+    startDateBox.style.display = "none";
+    harvestDateBox.style.display = "none";
     
     searchBox.value = "";
     filterList("");
@@ -31,8 +34,8 @@ selected.addEventListener("click", () => {
         searchBox.focus();
     }
     if(!(optionsContainer.classList.contains("active"))) {
-        document.getElementById("startDate").style.display = "block";
-        document.getElementById("harvestDate").style.display = "block";
+        startDateBox.style.display = "block";
+        harvestDateBox.style.display = "block";
     }
 });
 
@@ -41,8 +44,8 @@ optionsList.forEach(o => {
         selected.innerHTML = o.querySelector("label").innerHTML;
         optionsContainer.classList.remove("active");
 
-        document.getElementById("startDate").style.display = "block";
-        document.getElementById("harvestDate").style.display = "block";
+        startDateBox.style.display = "block";
+        harvestDateBox.style.display = "block";
     });
 });
 
@@ -66,7 +69,6 @@ const filterList = searchTerm => {
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
     //                                          Restart Button
 
 document.getElementById('restartBtn').addEventListener('click', _ => {
@@ -79,4 +81,20 @@ document.getElementById('restartBtn').addEventListener('click', _ => {
     // document.getElementById("startDateInput").value = "";
     // document.getElementById("harvestDateInput").value = "";
     window.location.reload();
+});
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//                                          Save Info for Calculator
+
+const calculateBtn = document.getElementById("calculatePrice");
+calculateBtn.addEventListener('click', _ => {
+
+    window.localStorage.setItem('selectedCrop', selected.innerHTML);
+    window.localStorage.setItem('selectedStartDate', document.getElementById('startDateInput').value);
+    window.localStorage.setItem('selectedHarvestDate', document.getElementById('harvestDateInput').value);
+    
+//  window.localStorage.getItem('selectedCrop'); -> to get items from local storage
+    window.location.href = 'yield.html';
 });
