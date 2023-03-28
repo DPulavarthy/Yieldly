@@ -96,5 +96,7 @@ calculateBtn.addEventListener('click', _ => {
     window.localStorage.setItem('selectedHarvestDate', document.getElementById('harvestDateInput').value);
     
 //  window.localStorage.getItem('selectedCrop'); -> to get items from local storage
-    window.location.href = 'yield.html';
+    // if (localStorage.getItem('selectedCrop') != "" /*&& localStorage.getItem('selectedCrop') != "Select a Crop :"*/){
+        window.location.href = 'yield.html';
+    // }
 });

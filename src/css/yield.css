@@ -37,13 +37,134 @@ body {
     line-height: 100px;
 }
 
-#dateNames {
+#startDateName,
+#harvestDateName {
     color: var(--main);
     font-weight: bold;
     font-size: 25px;
     display: inline-block;
 
     margin-top: 30px;
-    margin-left: 20px;
-    padding-inline: 5px;
+}
+
+#harvestDateName {
+    padding-left: 55px;
+}
+
+#startTxtBx,
+#endTxtBx {
+    background: var(--main);
+    display: inline-block;
+    margin-top: 10px;
+    width: 165px;
+    border-radius: 22px;
+    text-align: center;
+    height: 27px;
+    padding-top: 8px;
+    color: var(--background);
+    font-size: 18px;
+    /* padding-bottom:  */
+    padding-left: 3px;
+}
+
+#startDateName {
+    margin-left: 45px;
+}
+
+#harvestDateName,
+#startDateName {
+    font-weight: lighter;
+}
+
+#startTxtBx {
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+#priceBox {
+    margin-top: 30px;
+    margin-left: 25px;
+    background: #292B36;
+    color: var(--main);
+
+    height: 100px;
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    padding-left: 40px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+
+#yieldNum,
+#priceNum,
+#pricename,
+#yieldName {
+    display: inline-block;
+}
+
+#priceName {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+#yeildName,
+#yieldNum {
+    margin-top: 35px;
+}
+
+#saveYPBtn,
+#historyYPBtn,
+#restartYPBtn {
+    box-sizing: border-box;
+    position: flex;
+    background: #292B36;
+    mix-blend-mode: normal;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+
+    color: var(--main);
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+#saveYPBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -25%);
+
+    margin-top: 135px;
+    height: 60px;
+    width: 185px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#historyYPBtn {
+    margin-left: 45px;
+}
+
+#historyYPBtn,
+#restartYPBtn {
+    display: inline-flex;
+    /* margin-top: 15px; */
+    margin-top: 135px;
+    text-align: center;
+    padding-left: 27.5px;
+    width: 120px;
+    border-radius: 30px;
+    /* margin-right: 45px; */
+    height: 50px
+}
+
+#restartYPBtn {
+    margin-left: 50px;
 }
