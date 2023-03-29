@@ -2,6 +2,31 @@ body {
     overflow: hidden;
 }
 
+#locationHeading, #soilBox, #weatherBox {
+    text-align: center;
+    font-weight: bolder;
+    color: var(--main);
+}
+
+#locationHeading {
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+#soilBox, #weatherBox {
+    font-size: 35px;
+    background-color: #292B36;
+    color: var(--main);
+
+    margin: 20px;
+    height: 280px;
+
+    border-radius: 22px;
+
+    padding-top: 10px;
+}
+
+
 #navbar {
     position: fixed;
     bottom: 0;
