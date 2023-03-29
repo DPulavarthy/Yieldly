@@ -20,13 +20,14 @@ const searchBox = document.querySelector(".search-box input");
 const optionsList = document.querySelectorAll(".option");
 const startDateBox = document.getElementById("startDate");
 const harvestDateBox = document.getElementById("harvestDate");
-
+const areaBox = document.getElementById("area");
 
 selected.addEventListener("click", () => {
     optionsContainer.classList.toggle("active");
     
     startDateBox.style.display = "none";
     harvestDateBox.style.display = "none";
+    areaBox.style.display = "none";
     
     searchBox.value = "";
     filterList("");
@@ -36,6 +37,7 @@ selected.addEventListener("click", () => {
     if(!(optionsContainer.classList.contains("active"))) {
         startDateBox.style.display = "block";
         harvestDateBox.style.display = "block";
+        areaBox.style.display = "block";
     }
 });
 
@@ -46,6 +48,7 @@ optionsList.forEach(o => {
 
         startDateBox.style.display = "block";
         harvestDateBox.style.display = "block";
+        areaBox.style.display = "block";
     });
 });
 
@@ -94,6 +97,7 @@ calculateBtn.addEventListener('click', _ => {
     window.localStorage.setItem('selectedCrop', selected.innerHTML);
     window.localStorage.setItem('selectedStartDate', document.getElementById('startDateInput').value);
     window.localStorage.setItem('selectedHarvestDate', document.getElementById('harvestDateInput').value);
+    window.localStorage.setItem('acreArea', document.getElementById('areaInput').value);
     
 //  window.localStorage.getItem('selectedCrop'); -> to get items from local storage
     // if (localStorage.getItem('selectedCrop') != "" /*&& localStorage.getItem('selectedCrop') != "Select a Crop :"*/){
