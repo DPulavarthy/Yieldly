@@ -99,9 +99,10 @@ body {
 
 #yieldNum,
 #priceNum,
-#pricename,
+#priceName,
 #yieldName {
     display: inline-block;
+    font-size: 24px;
 }
 
 #priceName {
