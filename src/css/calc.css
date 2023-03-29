@@ -178,7 +178,7 @@ main #calculatePrice button {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -25%);
 
-    margin-top: 12%;
+    margin-top: 16%;
     height: 60px;
     width: 300px;
 
@@ -197,8 +197,8 @@ main #restartBtn button {
 
 main #restartBtn button,
 #historyBtn button {
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 10%px;
+    /* margin-bottom: 5px; */
     width: 125px;
     height: 50px;
     border-radius: 10px;
@@ -227,8 +227,8 @@ main #calculatePrice button,
 
 #navbar {
     position: flex;
-    margin-top: 155%;
-
+    margin-top: 160.5%;
+    /* margin-bottom: 0px; */
     width: 100%;
     height: 10vh;
     background-color: var(--main);

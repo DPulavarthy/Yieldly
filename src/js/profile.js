@@ -36,6 +36,10 @@ document.getElementById('marketBtn').addEventListener('click', _ => {
     window.location.href = 'market.html'
 });
 
+document.getElementById('logout').addEventListener('click', _ => {
+    window.location.href = 'index.html'
+});
+
 fetch('http://ip-api.com/json')
     .then(response => response.json())
     .then(data => {
