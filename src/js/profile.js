@@ -1,9 +1,4 @@
 document.getElementById('logout').addEventListener('click', function () {
-    firebase.auth().signOut().then(function () {
-        window.location.href = 'login.html#skip'
-    }).catch(function (error) {
-        console.log(error);
-    });
     window.location.href = 'index.html#skip'
 });
 
@@ -34,10 +29,6 @@ document.getElementById('calcBtn').addEventListener('click', _ => {
 });
 document.getElementById('marketBtn').addEventListener('click', _ => {
     window.location.href = 'market.html'
-});
-
-document.getElementById('logout').addEventListener('click', _ => {
-    window.location.href = 'index.html'
 });
 
 fetch('http://ip-api.com/json')

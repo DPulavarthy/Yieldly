@@ -104,3 +104,9 @@ calculateBtn.addEventListener('click', _ => {
         window.location.href = 'yield.html';
     // }
 });
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+document.getElementById('historyBtn').addEventListener('click', _ => {
+    window.location.href = 'history.html'
+});

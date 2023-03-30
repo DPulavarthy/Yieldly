@@ -1,0 +1,90 @@
+body {
+    overflow: hidden;
+}
+
+#screenTitle {
+    position: relative;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+
+    text-align: center;
+    margin-top: 5vh;
+    margin-left: 3vh;
+    color: var(--main);
+}
+
+#item {
+    position: relative;
+    width: 411px;
+    height: 238px;
+
+    margin-top: 5%;
+
+    background: #FFC462;
+
+    align-items: center;
+}
+
+#cropName {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+
+    margin-top: 2%;
+    padding-left: 28%;
+
+    color: #292B36;
+}
+
+#info {
+    position: relative;
+    width: 358px;
+    height: 65px;
+    margin-left: 5%;
+    margin-top: 6%;
+    margin-bottom: 5%;
+
+    background: #292B36;
+    mix-blend-mode: normal;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    color: var(--main);
+}
+
+#priceName, #yieldName {
+    margin-left: 10%;
+    margin-right: 10px;
+}
+
+#priceNum, #yieldNum {
+    margin-right: 10px;
+}
+
+#navbar {
+    position: absolute;
+    bottom: 0;
+    /* margin-bottom: 0px; */
+    width: 100%;
+    height: 10vh;
+    background-color: var(--main);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#navbar img {
+    display: inline-block;
+    margin-top: 1vh;
+    margin-left: 3.5vh;
+    width: 8vh;
+    height: 8vh;
+}

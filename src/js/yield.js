@@ -70,9 +70,9 @@ const lon = parseFloat(window.localStorage.getItem('userLongitude'));
 //   }
 // };
 
-const AGRO_API_KEY = '2769102a96a32ffc29b4ea0ad60000e0';
+const AGRO_API_KEY = 'b763a3b1d5efb4ecaceba3df59726e7e';
 
-window.localStorage.setItem('polygonID', '6424a536dfcf223b7f080e1a');
+window.localStorage.setItem('polygonID', '6423ed3050d9ff3a31558a78');
 
 // Soil Data
 const urlSoil = `http://api.agromonitoring.com/agro/1.0/soil?polyid=${window.localStorage.getItem('polygonID')}&appid=${AGRO_API_KEY}`;
@@ -132,11 +132,6 @@ const prices = {
     'Bananas': (yieldBana) => (yieldBana) * 20.50, 
 }
 
-const pricesData = {}
-for(const price in prices){
-    pricesData[price] = prices[price](yieldData[price]);
-}
-
 // Prints Yield of The crop to HTML
 for (const crop in yieldData) {
     if (crop == cropType.replace(/\s/g, '')) {
@@ -145,8 +140,13 @@ for (const crop in yieldData) {
         yieldLb = yieldLb * (totalDaysInBetween / 6);
         document.getElementById('yieldNum').innerHTML = `${yieldLb.toFixed(2)} lbs`;
 
-        let priceOfCrop = pricesData[cropType.replace(/\s/g, '')];
-        document.getElementById('priceNum').innerHTML = `$ ${priceOfCrop.toFixed(2)}`
-      //console.log(`${crop.charAt(0).toUpperCase()}${crop.slice(1)} yield: ${yieldData[crop].toFixed(2)} kg`);
+        const price = prices[cropType.replace(/\s/g, '')](yieldLb);
+        document.getElementById('priceNum').innerHTML = `$ ${price.toFixed(2)}`;
     }
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+document.getElementById('historyYPBtn').addEventListener('click', _ => {
+    window.location.href = 'history.html'
+});

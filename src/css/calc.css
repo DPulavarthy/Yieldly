@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    position: fixed;
+    position: absolute;
     width: 45vh;
     height: 54vh;
     left: 5.5%;
@@ -172,7 +172,7 @@ main #calculatePrice button {
     /* centered button */
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 95%;
     left: 50%;
     
     -ms-transform: translate(-50%, -50%);
@@ -192,12 +192,12 @@ main #calculatePrice button {
 
 main #restartBtn button {
     /* for spacing between history and Restart buttons */
-    margin-left: 80%;
+    margin-left: 65%;
 }
 
 main #restartBtn button,
 #historyBtn button {
-    margin-top: 10%px;
+    margin-top: 30%;
     /* margin-bottom: 5px; */
     width: 125px;
     height: 50px;
@@ -208,7 +208,7 @@ main #restartBtn button,
 main #calculatePrice button,
 #historyBtn button,
 #restartBtn button {
-    position: relative;
+    position: absolute;
     /* background: var(--main);
     border-color: var(--background);
     box-shadow: inset 0px 4px 4px var(--main); */
@@ -227,7 +227,7 @@ main #calculatePrice button,
 
 #navbar {
     position: flex;
-    margin-top: 160.5%;
+    margin-top: 156%;
     /* margin-bottom: 0px; */
     width: 100%;
     height: 10vh;

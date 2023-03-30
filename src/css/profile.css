@@ -13,14 +13,16 @@ body {
 
 #pfp {
     position: fixed;
-    left: 15%;
-    top: 5%;
+    left: 25%;
+    top: 8%;
     z-index: 10;
 }
 
 #pfp img {
     mix-blend-mode: normal;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 25vh;
+    height: 25vh;
 }
 
 main {
@@ -41,8 +43,8 @@ main {
 }
 
 #editBtn img {
-    width: 4vh;
-    height: 4vh;
+    width: 5vh;
+    height: 5vh;
 }
 
 .info {

@@ -10,11 +10,23 @@ body {
 
 #locationHeading {
     margin-top: 40px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
-#soilBox, #weatherBox {
-    font-size: 35px;
+#soilBox {
+    background-color: #292B36;
+    color: var(--main);
+
+    margin: 20px;
+    height: 150px;
+
+    border-radius: 22px;
+    padding-top: 1px;
+    margin-top: 10%;
+}
+
+
+#weatherBox {
     background-color: #292B36;
     color: var(--main);
 
@@ -22,13 +34,35 @@ body {
     height: 280px;
 
     border-radius: 22px;
-
-    padding-top: 10px;
+    padding-top: 1px;
+}
+#soilBox h3 {
+    margin-top: 5%;
+    font-size: 30px;
+}
+#weatherBox h3 {
+    margin-top: 5%;
+    font-size: 30px;
+}
+#soilBox .info {
+    text-align: left;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+#weatherBox .info {
+    text-align: left;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 15px;
 }
 
-
 #navbar {
-    position: fixed;
+    position: absolute;
     bottom: 0;
 
     width: 100%;

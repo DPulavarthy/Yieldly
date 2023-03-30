@@ -2,8 +2,21 @@ body {
     overflow: hidden;
 }
 
+#screenTitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 52px;
+    display: flex;
+    text-align: center;
+    margin-top: 5vh;
+    margin-left: 12vh;
+    margin-bottom: 0;
+    color: var(--main);
+}
+
 #navbar {
-    position: fixed;
+    position: flex;
     bottom: 0;
 
     width: 100%;

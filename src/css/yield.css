@@ -23,6 +23,7 @@ body {
 #cropTypeTitleBox {
     color: var(--background);
     background: #FFC462;
+    border-radius: 12px;
     margin-top: 50px;
     text-align: center;
     margin-right: auto;
@@ -40,8 +41,8 @@ body {
 #startDateName,
 #harvestDateName {
     color: var(--main);
-    font-weight: bold;
-    font-size: 25px;
+    font-weight: normal;
+    font-size: 20px;
     display: inline-block;
 
     margin-top: 30px;
