@@ -22,7 +22,7 @@ fetch(urlSoil)
   })
   .catch(error => console.error(error));
 
-const urlWeather = `https://api.agromonitoring.com/agro/1.0/weather?lat=33.1794&lon=-96.9538&appid=${AGRO_API_KEY}`
+const urlWeather = `https://api.agromonitoring.com/agro/1.0/weather?lat=${window.localStorage.getItem('userLatitude')}&lon=${window.localStorage.getItem('userLongitude')}&appid=${AGRO_API_KEY}`
 
 fetch(urlWeather)
 .then(response => response.json())
