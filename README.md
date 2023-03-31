@@ -3,7 +3,7 @@
     <img src="assets/readme.png" alt="Logo">
   </a>
 
-  <h3 align="center"> 💠 Yieldly 💠 </h3>
+  <h3 align="center">  Yieldly  </h3>
   <p align="center">
     A prototype application that allows farmers to track their crop yields and use current global economical factors to estimate profits. 
     <br />
@@ -32,3 +32,9 @@ In reference to development please use the following to start the application. P
 Terminal 1: `npm run server`.  
 Terminal 2: `npm run android`.  
 Note: Please do not run scripts other than these two to maintain stability.
+
+
+
+
+https://user-images.githubusercontent.com/66446416/229194827-2ae88674-0083-4bd5-9f5a-9259c38df241.mp4
+
