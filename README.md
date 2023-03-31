@@ -41,10 +41,14 @@ Our web-application aims to help farmers increase their crop yields as well as i
 2. Please Install <code><a href="https://nodejs.org/en/blog/release/v16.16.0">Node.JS 16.0 Version</a></code>
 2. Download Dependency: `npm install`
 3. Start Android Studio Virtual Emulator (Reccomended Google Pixel 5) or Your Own Android/IOS Emulator
-4. Open the code and follow below:
-    please use the following to start the application. Please use two seperate terminals to run this.  
+4. Open the code and please use the following to start the application.
+   <br />
+   Please use two seperate terminals to run this.
+   <br />  
     Terminal 1: `npm run server`
-    Terminal 2: `npm run android`  
+   <br />
+    Terminal 2: `npm run android` 
+   <br /> 
     Note: Please do not run scripts other than these two to maintain stability.
 
 ### Demo Video:
