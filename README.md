@@ -28,8 +28,10 @@
 ### Problem - Solution
 Small-scale farmers often face numerous challenges. Including limited access to resources and market information. These challenges can hinder the farmer's ability to grow their businesses and generate income, leading to poverty and economic insecurity.
 Our web-application aims to help farmers increase their crop yields as well as improve economic conditions of small farms to take advantage of the market price to choose which crop to plant for more profit.
-![image](https://user-images.githubusercontent.com/66446416/229208444-f7dd27db-2e05-4426-8173-fa458f84f921.png =100x100 )
-![image](https://user-images.githubusercontent.com/66446416/229208476-fdb0ebb5-5f10-48a0-84e9-0e2dabefd6f0.png =100x100)
+![image](https://user-images.githubusercontent.com/66446416/229211225-1b8f63cf-f5ab-4326-9956-7903e66ae50b.png)
+![image](https://user-images.githubusercontent.com/66446416/229211272-8506fda8-4d56-4706-85ee-9b605baca53f.png)
+
+
 
 
 ### Quick Start on How to Run the Web-App
