@@ -32,8 +32,12 @@ Our web-application aims to help farmers increase their crop yields as well as i
 ![image](https://user-images.githubusercontent.com/66446416/229211225-1b8f63cf-f5ab-4326-9956-7903e66ae50b.png)
 ![image](https://user-images.githubusercontent.com/66446416/229211272-8506fda8-4d56-4706-85ee-9b605baca53f.png)
 
-
-
+### Technology and Data Collection Used
+- Firebase
+- Google Earth Engine
+- Google Maps and Places API
+- Agromonitoring API
+- USDA Market News
 
 ### Quick Start on How to Run the Web-App
 
@@ -52,4 +56,6 @@ Our web-application aims to help farmers increase their crop yields as well as i
     Note: Please do not run scripts other than these two to maintain stability.
 
 ### Demo Video:
+<a href="https://youtu.be/afde5BZD9vw">https://youtu.be/afde5BZD9vw</a>
+
 https://user-images.githubusercontent.com/66446416/229194827-2ae88674-0083-4bd5-9f5a-9259c38df241.mp4
