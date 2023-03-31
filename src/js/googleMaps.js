@@ -2,6 +2,8 @@ var map;
 var service;
 var infowindow;
 
+
+
 const lat = parseFloat(window.localStorage.getItem("userLatitude"));
 const lon = parseFloat(window.localStorage.getItem("userLongitude"));
 
