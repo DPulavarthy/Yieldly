@@ -44,10 +44,11 @@ Our web-application aims to help farmers increase their crop yields as well as i
 4. Open the code and please use the following to start the application.
    <br />
    Please use two seperate terminals to run this.
-    Terminal 1: `npm run server`
    <br />
+    Terminal 1: `npm run server`
+    <br />
     Terminal 2: `npm run android` 
-   <br /> 
+    <br /> 
     Note: Please do not run scripts other than these two to maintain stability.
 
 ### Demo Video:
