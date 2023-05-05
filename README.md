@@ -55,6 +55,8 @@ Our web-application aims to help farmers increase their crop yields as well as i
     <br /> 
     Note: Please do not run scripts other than these two to maintain stability.
 
+API KEY Shut Downed Due to Pricing! No Maps available.
+
 ### Demo Video:
 <a href="https://youtu.be/afde5BZD9vw">https://youtu.be/afde5BZD9vw</a>
 
